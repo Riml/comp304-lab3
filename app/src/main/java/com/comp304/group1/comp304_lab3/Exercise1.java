@@ -16,7 +16,7 @@ import java.util.Arrays;
 
 public class Exercise1 extends AppCompatActivity implements OnItemSelectedListener {
 
-
+    //Prepare Variables
     ImageView mainRectView;
     ArrayAdapter colorAdapter;
     Spinner colorPicker;
@@ -27,37 +27,36 @@ public class Exercise1 extends AppCompatActivity implements OnItemSelectedListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise1);
         drawRect();
-        prepapreSpinner();
-
-
-
+        prepareSpinner();
     }
 
+    //prepare RectView
     private void drawRect(){
-
         mainRectView = (ImageView) findViewById(R.id.rectView);
         mainRectView.setImageResource(R.drawable.rectangle);
-
     }
 
-    private void prepapreSpinner(){
+    // Prepare and Populate spinner
+    private void prepareSpinner(){
 
        colorPicker =(Spinner)findViewById(R.id.spinner);
-       colorAdapter = new ArrayAdapter<String>(this,
+
+       // Create ArrayAdapter for the spinner
+        colorAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item,
                 Arrays.asList(getResources().getStringArray(R.array.rect_color_picker)));
 
         // Attach the array adapter to the spinner
-
         colorPicker.setAdapter(colorAdapter);
         colorPicker.setOnItemSelectedListener(this);
 
     }
 
+    //Add controls to move view
     public boolean onKeyDown(int keyCode, KeyEvent event)
     {
-
         switch (keyCode){
+            //no DPAD on a real phone, so just to showcase lets use Volume btns
             case KeyEvent.KEYCODE_VOLUME_UP:
             case KeyEvent.KEYCODE_DPAD_DOWN:
                 mainRectView.setTranslationY(mainRectView.getTranslationY()+5);
@@ -72,12 +71,11 @@ public class Exercise1 extends AppCompatActivity implements OnItemSelectedListen
             case KeyEvent.KEYCODE_DPAD_RIGHT:
                 mainRectView.setTranslationX(mainRectView.getTranslationX()+5);
                 return true;
-
         }
-
         return false;
     }
-    //AARRGGBB
+    //Switch rect color based on picked item
+    //color format 0xAARRGGBB
     public void onItemSelected(AdapterView<?> parent, View view,
                                int pos, long id) {
         switch (parent.getSelectedItem().toString()){
@@ -95,6 +93,8 @@ public class Exercise1 extends AppCompatActivity implements OnItemSelectedListen
 
 
     }
+
+    //required method for  ----implements OnItemSelectedListener---
     public void onNothingSelected(AdapterView<?> parent) {
         mainRectView.setColorFilter( 0xffbaffed);
     }
