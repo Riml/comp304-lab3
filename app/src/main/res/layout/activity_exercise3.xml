@@ -17,7 +17,7 @@
         android:layout_centerVertical="true"
         android:id="@+id/earth"
         app:srcCompat="@drawable/earth"
-        android:contentDescription="earth" />
+        android:contentDescription="@string/earthImg" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -27,6 +27,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="134dp"
         app:srcCompat="@drawable/moon"
-        android:contentDescription="moon" />
+        android:contentDescription="@string/moonImg" />
 
 </RelativeLayout>

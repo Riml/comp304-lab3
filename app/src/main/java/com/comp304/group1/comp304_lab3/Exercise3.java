@@ -2,6 +2,8 @@ package com.comp304.group1.comp304_lab3;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 /**
@@ -17,6 +19,8 @@ public class Exercise3 extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         moonImg = (ImageView) findViewById(R.id.moon);
+        Animation orbit = AnimationUtils.loadAnimation(this, R.anim.orbit);
+        moonImg.startAnimation(orbit);
     }
 
 }
