@@ -4,8 +4,6 @@
     <string name="btn_e2_msg">Exercise 2</string>
     <string name="btn_e3_msg">Exercise 3</string>
     <string name="btn_e1_msg">Exercise 1</string>
-    <string name="earthImg">Earth</string>
-    <string name="moonImg">Moon</string>
 
     <string-array name="rect_color_picker">
         <item>Red</item>
