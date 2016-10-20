@@ -8,6 +8,7 @@
     <string name="moonImg">Moon</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="cartoon_animation">cartoon-animation</string>
 
 
     <string-array name="rect_color_picker">
