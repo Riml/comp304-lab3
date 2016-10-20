@@ -6,14 +6,12 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/earthToon"
         android:layout_centerVertical="true"
         android:id="@+id/earth" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/moon"
         android:id="@+id/moon"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
