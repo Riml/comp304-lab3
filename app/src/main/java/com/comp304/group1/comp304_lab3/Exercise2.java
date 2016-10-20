@@ -22,12 +22,13 @@ public class Exercise2 extends AppCompatActivity {
 
     @Override
     protected void onStart(){
+        super.onStart();
         loadUI();
         UIControls();
         // set background image of imageView to the AnimationDrawable
         frameAnimation = (AnimationDrawable) imageView.getBackground();
         // Stop after one iteration of animation
-        frameAnimation.setOneShot(true);
+        frameAnimation.setOneShot(false);
     }
 
     private void loadUI(){

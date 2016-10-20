@@ -16,6 +16,7 @@ import java.util.Arrays;
 
 public class Exercise1 extends AppCompatActivity implements OnItemSelectedListener {
 
+
     //Prepare Variables
     ImageView mainRectView;
     ArrayAdapter colorAdapter;
@@ -71,6 +72,10 @@ public class Exercise1 extends AppCompatActivity implements OnItemSelectedListen
             case KeyEvent.KEYCODE_DPAD_RIGHT:
                 mainRectView.setTranslationX(mainRectView.getTranslationX()+5);
                 return true;
+            case  KeyEvent.KEYCODE_BACK:
+                onBackPressed();
+                return true;
+
         }
         return false;
     }
