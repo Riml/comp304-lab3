@@ -12,22 +12,24 @@
     tools:context="com.comp304.group1.comp304_lab3.Exercise3">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_height="150dp"
         android:id="@+id/earth"
         app:srcCompat="@drawable/earth"
-        android:contentDescription="@string/earthImg" />
+        android:contentDescription="@string/earthImg"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/moon"
         app:srcCompat="@drawable/moon"
         android:contentDescription="@string/moonImg"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="212dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBottom="@+id/earth"
         android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
