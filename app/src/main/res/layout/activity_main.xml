@@ -11,7 +11,38 @@
     tools:context="com.comp304.group1.comp304_lab3.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/main_next_msg" />
+
+    <Button
+        android:text="@string/btn_e2_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEx2"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/btnEx1"
+        android:layout_alignParentStart="true"
+        android:onClick="ex2Click" />
+
+    <Button
+        android:text="@string/btn_e3_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEx3"
+        android:layout_below="@+id/btnEx2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:onClick="ex3Click"/>
+
+    <Button
+        android:text="@string/btn_e1_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEx1"
+        android:layout_marginTop="96dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:onClick="ex1Click" />
 </RelativeLayout>
