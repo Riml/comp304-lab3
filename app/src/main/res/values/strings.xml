@@ -4,6 +4,9 @@
     <string name="btn_e2_msg">Exercise 2</string>
     <string name="btn_e3_msg">Exercise 3</string>
     <string name="btn_e1_msg">Exercise 1</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="cartoon_animation">cartoon-animation</string>
 
     <string-array name="rect_color_picker">
         <item>Red</item>
